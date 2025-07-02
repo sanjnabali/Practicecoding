@@ -13,10 +13,17 @@ int main(){
         cout << std::bitset<3>(mask) << "  →  { ";
         for (int i = 0; i < n; ++i) {
             if (mask & (1 << i))           // is bit i on?
-                cout << arr[i] << ' ';    // include that item
+                cout << arr[i] << ' ';    
+                // include that item
+            
         }
         cout << "}\n";
     }
+    cout << "Total Subsets: " << totalSubsets << endl;
+    cout << "All subsets of { ";
+    for (int i = 0; i < n; ++i)
+        cout << arr[i] << ' ';  
+
 
     cout<<"} \n"<<endl;
     return 0;
