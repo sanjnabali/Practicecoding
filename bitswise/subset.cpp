@@ -20,3 +20,19 @@ vector<vector<string>> subsets(vector<string>& nums){
         result.push_back(subset); // Add the current subset to the result
     }
 }
+
+int main() {
+    vector<string> nums = {"a", "b", "c"};
+    vector<vector<string>> result = subsets(nums);
+    
+    cout << "Subsets:" << endl;
+    for(const auto& subset : result) {
+        cout << "{ ";
+        for(const auto& str : subset) {
+            cout << str << " ";
+        }
+        cout << "}" << endl;
+    }
+    
+    return 0;
+}
