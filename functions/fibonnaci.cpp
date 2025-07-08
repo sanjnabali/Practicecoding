@@ -9,8 +9,9 @@ int fibonacci(int n){
     return fibonacci(n-1)+fibonacci(n-2);
 }
 
+
 int main(){
-    int n;
+    int n; //enter the number 
     cout<<"Enter the value of n: ";
     cin>>n;
 }
