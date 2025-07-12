@@ -12,3 +12,4 @@ int duplicatethezeros(vector<int> &arr){
         
     }
 }
+
