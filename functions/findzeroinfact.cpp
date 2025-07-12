@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//to find zeroes divide the number by 5.... like factorial of 10 = 10/5 = 2
+
 int countTrailingZeros(int n) {
     int count = 0; //count initializes to 0 at start , 
     for(int i = 5; n / i >= 1; i *= 5){ // i = 5 , 5/5 = 1, 5/25 = 0
