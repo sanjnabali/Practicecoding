@@ -1,7 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Use the Sorted Two-Pointer technique when:
 
+You're given or allowed to sort the array.
+
+You need to find a pair (or count pairs) that meet some condition (sum, difference, product, etc.).
+
+You want a space-efficient alternative to Hashing.
+
+*/
 int targetsum(vector<int>& nums, int target){
     int left = 0;
     int right = nums.size()-1;
