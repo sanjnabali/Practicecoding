@@ -31,9 +31,9 @@ int removeDuplicates(vector<int>& nums){
     int slow = 0; //means first unique value is already accepted
 
     for(int fast = 1; fast < nums.size(); fast++){ //fast = 1 means start comparing from the second element onwards
-        if(nums[slow] != nums[fast]){
-            slow++;
-            nums[slow] = nums[fast];
+        if(nums[slow] != nums[fast]){// nums[slow] = nums[0] = 0 != nums[fast] = nums[1] = 0 //nums[0] = 0 != nums[2] = 1 //
+            slow++; //slow = 1
+            nums[slow] = nums[fast]; //nums[1] = nums[2] i.e 0 = 1
         }
     }
     return slow + 1;
